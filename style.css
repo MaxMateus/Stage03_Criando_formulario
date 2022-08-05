@@ -1,0 +1,188 @@
+* {
+    margin: 0; /* zera a margin natural da página*/
+    padding: 0; /* Zera o paddin natural da página */
+    box-sizing: border-box;  /* IMPORTANTISSIMO ! Impede de as box se sobreporem e impede que as box alterem o seu tamanho ao colocar margem ou padding*/
+}
+
+body {
+    font-family: 'Staatliches', cursive; /*Fonte do body*/
+}
+
+body {
+    background-color: #E5E5E5; /*Cor do body*/
+}
+
+body::before { /*Cria uma box "azul escura", onde é possível aplicar por trás dos textos.*/
+    content: ""; /*?*/
+    width: 100%; /*Utilizado para aplicar comprimento na página*/
+    height: 436px; /*Largura da box azul*/
+
+    position: absolute; /*Permite posicionar a box sobre outros elementos*/
+    top: 0; /*Posicionamento da box azul*/
+    left: 0; /*Posicionamento da box azul*/
+    z-index: -1; /*Utilizado para aplicar a box por baixo de outros elementos*/
+    background: #535971; /*Cor da box*/
+
+}
+
+.page {
+    width: 750px; /*Utilizado para definir o comprimento da página, Sendo eles o campo descrito da mentoria, campos */
+    margin: auto; /*Centraliza a página no meio*/
+}
+
+header {
+    width: 417px; /*Comprimento da caixa, onde está a mentoria e o texto abaixo dela */
+    height: 124px; /*Largura da caixa, ...*/
+
+    margin-top: 138px; /*Distância do Header até o topo da página*/   
+    margin-bottom: 58px; /* Distacia do Header até o form*/
+
+} 
+
+header h1 {
+    font-family: 'Staatliches'; /*Fonte do texto*/
+    font-weight: 400; /*Intensidade da fonte*/
+    font-size: 48px; /*Tamanho da fonte*/
+    line-height: 60px; /*Distância entre as linhas de texto*/
+    color: #FFFFFF; /*Cor da fonte*/
+}
+
+header p {
+    font-family: 'Poppins', sans-serif; /*Fonte do texto*/
+    font-weight: 400; /*Intensidade da fonte*/
+    font-size: 20px; /*Tamanho da fonte*/
+    line-height: 30px; /*Distância entre as linhas de texto*/
+
+    color: #FFFFFF; /*Cor da fonte*/
+}
+
+form {
+    background: #FFFFFF; /*Cor da fonte*/
+    min-height: 300px; /*Largura do formulário*/
+    border-radius: 20px 20px 0 0; /*Bordas do formulário*/
+
+    padding: 64px; /* Espaço interno, entre o fim do formulário e ínicio dos componentes do formulário.*/
+
+}
+
+fieldset {
+    border: none; /*Remove a borda natural do fieldset*/
+}
+
+fieldset legend {
+    font-family: 'Staatliches'; /*Fonte do texto*/
+    font-weight: 400;/*Intensidade da Fonte*/
+    font-size: 24px; /*Tamanho da fonte*/
+    line-height: 34px; /*Distancia entre as linhas de texto*/
+
+    color: #535971; /*Cor da Caixa*/
+
+    width: 100%; /*Utilizado para aplicar 100% da linha no preenchimento disponível do formularo."linha a baixo do campo informações pessoais"*/
+    border-bottom: 1px solid #E6E6F0; /*Utilizado para criar uma linha abaixo do texto "Informações pessoais". Define cor e tamanho da linha.*/
+    padding-bottom: 16px; /*Cria uma distância entre a linha e o texto informações pessoais*/
+    margin-bottom: 36px;
+}
+
+.input-wrapper label {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #C1BCCC;
+
+    margin-left: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    width: 100%;
+    height: 56px;
+
+    padding: 16px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #C1BCCC;
+
+    margin-bottom: 20px;
+}
+
+.col-2 {
+    display: flex;
+    gap: 22px;
+} 
+
+.mentoria {
+    font-family: 'Staatliches';
+    font-size: 20px;
+    line-height: 34px;
+
+    color: #535971;
+
+    margin-bottom: 8px;
+}
+
+.col-3 {
+  display: flex;
+  gap: 32px;
+}
+
+.col-3 > div:nth-child(1) {
+    width: 100%;
+}
+
+.col-3 > div:nth-child(2) {
+    margin-right: -22px;
+}
+
+footer {
+    background: #535971;
+
+    width: 750px;
+    height: 160px;
+    border-radius: 0px 0px 20px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .button {
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    background: #FF5374;
+    width: 608px;
+    height: 56px;
+
+    border: none;
+
+    border-radius: 20px;
+    color: #FFFFFF;
+
+    
+
+
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Formulários</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+   <div class="page"> <!--ok-->
+
+        <header>
+         <h1>MENTORIA</h1>
+         <P>Preencha o formulário abaixo para agendar sua mentoria</P>
+        </header>
+  
+    <form id="form">
+        
+            
+        <fieldset>
+            <div class="fieldset-wrapper"> <!--ok-->
+
+                <legend>INFORMAÇÕES PESSOAIS</legend> <!---Legenda da sessão-->
+
+                <div class="col-2"> <!--ok-->
+                    <div class="input-wrapper"> <!--ok-->
+                        <label for="event-name">Nome</label>
+                        <input type="text"
+                        id="event-name"
+                        required/>
+                        
+                    </div> <!--ok-->
+
+                    <div class="input-wrapper"> <!--ok-->
+                        <label for="event-surname">Sobrenome</label>
+                        <input type="text"
+                        id="event-surname"
+                        required/>
+                    </div> <!--ok-->
+                </div> <!--ok-->
+
+                <div class="input-wrapper"> <!--ok-->
+                    <label for="event-email">Email <span>(digite um email válido)</span></label>
+                    <input type="email"
+                            id="event-email"
+                            required/>
+                </div> <!--ok-->
+
+                <div class="input-wrapper"> <!--ok-->
+                    <label for="event-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                    <input type="password"
+                            id="event-password"
+                            minlength="6"
+                            required/>
+                </div> <!--ok-->
+            </div> <!--ok-->
+        </fieldset>
+ 
+      
+        <fieldset>
+            <div class="fieldset-wrapper"> <!--ok-->
+
+            <legend>INFORMAÇÕES DO MENTOR</legend> <!---Legenda da sessão-->
+
+                <div class="input-wrapper"> <!--ok-->
+                    <label for="event-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                    <input type="text"
+                            id="event-mentor"
+                            required/>
+                </div> <!--ok-->
+            </div> <!--ok-->
+        </fieldset>
+        
+
+        <fieldset>
+
+                <div class="fieldset-wrapper"> <!--ok-->    
+    
+                    <legend>SEUS HORÁRIOS DISPONÍVEIS</legend> <!---Legenda da sessão-->
+
+                        <div class="mentoria">PRIMEIRA MENTORIA</div> <!--ok-->
+            
+                            <div class="col-3"> <!--ok-->
+                                <div class="input-wrapper"> <!--ok-->
+                                    <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                                    <input type="date"
+                                    id="event-date"
+                                    required/>
+                                    
+                                </div> <!--ok-->
+            
+                                <div class="input-wrapper"> <!--ok-->
+                                    <label for="event-time">Das</label>
+                                    <input type="time"
+                                    id="event-begin"
+                                    required/>
+                                </div> <!--ok-->
+                            
+                                <div class="input-wrapper"> <!--ok-->
+                                    <label for="event-time"> Até </label>
+                                    <input type="time"
+                                            id="event-end"
+                                            required/>
+                                </div> <!--ok-->
+                            </div> <!--ok-->
+                    </div> <!--ok-->
+
+                    <div class="mentoria">SEGUNDA MENTORIA</div> <!--ok-->
+            
+                            <div class="col-3"> <!--ok-->
+                                <div class="input-wrapper"> <!--ok-->
+                                    <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                                    <input type="date"
+                                    id="event-date"
+                                    required/>
+                                    
+                                </div> <!--ok-->
+            
+                                <div class="input-wrapper"> <!--ok-->
+                                    <label for="event-time">Das</label>
+                                    <input type="time"
+                                    id="event-begin"
+                                    required/>
+                                </div> <!--ok-->
+                            
+            
+                                <div class="input-wrapper"> <!--ok-->
+                                    <label for="event-time"> Até </label>
+                                    <input type="time"
+                                            id="event-end"
+                                            required/>
+                                </div> <!--ok-->
+                            </div> <!--ok-->
+        </fieldset>
+    </form>
+
+    <footer>
+        <input class="button" 
+               form="form" 
+               type="submit" 
+               value="SALVAR">
+    </footer>
+
+
+    </div> <!--ok-->
+
+</body>
+</html>
